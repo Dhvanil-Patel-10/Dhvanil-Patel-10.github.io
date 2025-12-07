@@ -44,6 +44,7 @@
             letter-spacing: 1px;
             margin-top: 30px;
             border-left: 5px solid #333;
+            margin-bottom: 20px;
         }
 
         /* Job Styles */
@@ -84,9 +85,29 @@
             margin-bottom: 5px;
         }
 
-        .summary, .skills {
+        .summary {
             font-size: 14px;
             text-align: justify;
+        }
+
+        /* New Skills Grid Styles */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .skill-item {
+            background-color: #e9ecef; /* Light grey background */
+            color: #333;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-size: 13px;
+            font-weight: 500;
+            border: 1px solid #ced4da;
+            flex-grow: 1; /* Makes them stretch slightly to fill gaps */
+            text-align: center;
         }
     </style>
 </head>
@@ -112,7 +133,7 @@
         <div class="job-entry">
             <div class="job-header">
                 <span class="job-title">Office Admin Assistant</span>
-                <span class="job-dates">India</span>
+                <span class="job-dates">AUG 2024 - Present (India)</span>
             </div>
             <div class="job-company">LifeBond Pvt. Ltd.</div>
             <ul>
@@ -127,10 +148,7 @@
         <div class="job-entry">
             <div class="job-header">
                 <span class="job-title">Fraud and Loss Prevention Specialist</span>
-                <span class="job-dates">
-                    AUG 2024 - Present (India)<br>
-                    FEB 2024 - July 2024 (Markham, Canada)
-                </span>
+                <span class="job-dates">FEB 2024 - July 2024 (Markham, Canada)</span>
             </div>
             <div class="job-company">TD Canada Trust</div>
             <ul>
@@ -218,9 +236,25 @@
 
     <section>
         <h2>Skills</h2>
-        <p class="skills">
-            General Skills: Excellent Analytical Skills, Deep technological knowledge of MS Office Suite, GATEWAY and HOST, PRM (PROFESSIONAL RISK MANAGEMENT), DPM (DISPUTE PROCESS MANAGER), PEGA for credit cards, VISA Online and Verified by VISA., Great asset under fast paced environment, Fraud prevention and AML Specialist, Client service, Fraud Detection and analysis, AI Prompting and Preference Ranking, Investment Banking and Investment Advisor, Financial Planning and Manager, Retirement Planning, Financial Market Analysis, Creative Writing.
-        </p>
+        <div class="skills-grid">
+            <div class="skill-item">Excellent Analytical Skills</div>
+            <div class="skill-item">MS Office Suite</div>
+            <div class="skill-item">GATEWAY & HOST</div>
+            <div class="skill-item">PRM (Professional Risk Mgmt)</div>
+            <div class="skill-item">DPM (Dispute Process Mgmt)</div>
+            <div class="skill-item">PEGA (Credit Cards)</div>
+            <div class="skill-item">VISA Online & Verified by VISA</div>
+            <div class="skill-item">Fraud Prevention</div>
+            <div class="skill-item">AML Specialist</div>
+            <div class="skill-item">Fraud Detection & Analysis</div>
+            <div class="skill-item">Client Service</div>
+            <div class="skill-item">AI Prompting & Preference Ranking</div>
+            <div class="skill-item">Investment Banking</div>
+            <div class="skill-item">Financial Planning</div>
+            <div class="skill-item">Retirement Planning</div>
+            <div class="skill-item">Financial Market Analysis</div>
+            <div class="skill-item">Creative Writing</div>
+        </div>
     </section>
 
 </body>
